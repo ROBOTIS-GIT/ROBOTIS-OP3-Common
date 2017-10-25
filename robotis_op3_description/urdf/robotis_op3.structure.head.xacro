@@ -63,8 +63,18 @@
     <child link="cam_link"/>
   </joint>
 
+  <joint name="cam_gazebo" type="fixed">
+    <origin xyz="0.01425 -0.019 0.04975" rpy="0 0 0"/>
+    <parent link="head_tilt_link"/>
+    <child link="cam_gazebo_link"/>
+  </joint>
+
   <!-- camera link -->
   <link name="cam_link">
+  </link>
+
+  <!-- camera link -->
+  <link name="cam_gazebo_link">
   </link>
 
   </xacro:macro>
