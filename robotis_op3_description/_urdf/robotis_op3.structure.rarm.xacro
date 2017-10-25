@@ -14,7 +14,7 @@
     <child link="r_sho_pitch_link"/>
     <origin xyz="-0.001 -0.06 0.111" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_sho_pitch" />
@@ -38,7 +38,7 @@
     <child link="r_sho_roll_link"/>
     <origin xyz="0.019 -0.0285 -0.010" rpy="0 0 0" />
     <axis xyz="-1 0 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_sho_roll" />
@@ -62,7 +62,7 @@
     <child link="r_el_link"/>
     <origin xyz="0.0 -0.0904 -0.0001" rpy="0 0 0" />
     <axis xyz="1 0 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_el" />

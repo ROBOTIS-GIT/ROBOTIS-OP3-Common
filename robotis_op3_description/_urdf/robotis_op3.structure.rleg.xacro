@@ -14,7 +14,7 @@
     <child link="r_hip_yaw_link"/>
     <origin xyz="0.0 -0.035 0.0" rpy="0 0 0" />
     <axis xyz="0 0 -1" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_hip_yaw" />
@@ -38,7 +38,7 @@
     <child link="r_hip_roll_link"/>
     <origin xyz="-0.024 0.0 -0.0285" rpy="0 0 0" />
     <axis xyz="-1 0 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_hip_roll" />
@@ -62,7 +62,7 @@
     <child link="r_hip_pitch_link"/>
     <origin xyz="0.0241 -0.019 0.0" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_hip_pitch" />
@@ -86,7 +86,7 @@
     <child link="r_knee_link"/>
     <origin xyz="0.0 0.0 -0.11015" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_knee" />
@@ -110,7 +110,7 @@
     <child link="r_ank_pitch_link"/>
     <origin xyz="0 0 -0.110" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_ank_pitch" />
@@ -134,7 +134,7 @@
     <child link="r_ank_roll_link"/>
     <origin xyz="-0.0241 0.019 0" rpy="0 0 0" />
     <axis xyz="1 0 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="r_ank_roll" />

@@ -14,7 +14,7 @@
     <child link="head_pan_link"/>
     <origin xyz="-0.001 0.0 0.1365" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="head_pan" />
@@ -38,7 +38,7 @@
     <child link="head_tilt_link"/>
     <origin xyz="0.010 0.019 0.0285" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
+    <limit effort="1000" velocity="100" lower="${-pi*0.6}" upper="${pi*0.6}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
   <xacro:insert_transmission name="head_tilt" />

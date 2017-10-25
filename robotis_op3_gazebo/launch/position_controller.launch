@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find robotis_op3_gazebo)/config/position_controller.yaml" command="load"/>
+
+  <!-- load the controllers -->
+<!--
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  output="screen" ns="/robotis_op3" args="joint_state_controller
+                                          head_pan_position
+                                          head_tilt_position" />
+-->
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  output="screen" ns="/robotis_op3" args="joint_state_controller
+                                          l_hip_yaw_position
+                                          l_hip_roll_position
+                                          l_hip_pitch_position
+                                          l_knee_position
+                                          l_ank_roll_position
+                                          l_ank_pitch_position
+                                          r_hip_yaw_position
+                                          r_hip_roll_position
+                                          r_hip_pitch_position
+                                          r_knee_position
+                                          r_ank_roll_position
+                                          r_ank_pitch_position
+                                          l_sho_pitch_position
+                                          l_sho_roll_position
+                                          l_el_position
+                                          r_sho_pitch_position
+                                          r_sho_roll_position
+                                          r_el_position
+                                          head_pan_position
+                                          head_tilt_position" />
+
+
+</launch>
