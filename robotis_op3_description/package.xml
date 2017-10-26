@@ -4,7 +4,7 @@
   <version>0.0.1</version>
   <description>The robotis_op3_description package</description>
   
-  <license>BSD</license>
+  <license>Apache License 2.0</license>
   <author email="sch@robotis.com">SCH</author>
   <author email="kmjung@robotis.com">Kayman</author>
   <maintainer email="pyo@robotis.com">Pyo</maintainer>
