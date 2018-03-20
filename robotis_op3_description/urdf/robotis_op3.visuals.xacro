@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!--
   <xacro:property name="pi" value="3.141592654" />
+  -->
 
   <!-- body link -->
   <xacro:macro name="insert_mesh_body_link">
