@@ -9,7 +9,7 @@
   <xacro:macro name="insert_mesh_body_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/body.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/body.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -20,7 +20,7 @@
   <xacro:macro name="insert_mesh_r_hip_yaw_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/rl1.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/rl1.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -31,7 +31,7 @@
   <xacro:macro name="insert_mesh_r_hip_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/rl2.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/rl2.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -42,7 +42,7 @@
   <xacro:macro name="insert_mesh_r_hip_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/rl3.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/rl3.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -53,7 +53,7 @@
   <xacro:macro name="insert_mesh_r_knee_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/rl4.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/rl4.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -64,7 +64,7 @@
   <xacro:macro name="insert_mesh_r_ank_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/rl5.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/rl5.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -75,7 +75,7 @@
   <xacro:macro name="insert_mesh_r_ank_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/rl6.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/rl6.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -86,7 +86,7 @@
   <xacro:macro name="insert_mesh_l_hip_yaw_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ll1.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ll1.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -97,7 +97,7 @@
   <xacro:macro name="insert_mesh_l_hip_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ll2.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ll2.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -108,7 +108,7 @@
   <xacro:macro name="insert_mesh_l_hip_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ll3.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ll3.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -119,7 +119,7 @@
   <xacro:macro name="insert_mesh_l_knee_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ll4.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ll4.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -130,7 +130,7 @@
   <xacro:macro name="insert_mesh_l_ank_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ll5.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ll5.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -141,7 +141,7 @@
   <xacro:macro name="insert_mesh_l_ank_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ll6.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ll6.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -152,7 +152,7 @@
   <xacro:macro name="insert_mesh_r_sho_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ra1.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ra1.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -163,7 +163,7 @@
   <xacro:macro name="insert_mesh_r_sho_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ra2.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ra2.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -174,7 +174,7 @@
   <xacro:macro name="insert_mesh_r_el_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/ra3.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/ra3.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -185,7 +185,7 @@
   <xacro:macro name="insert_mesh_l_sho_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/la1.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/la1.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -196,7 +196,7 @@
   <xacro:macro name="insert_mesh_l_sho_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/la2.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/la2.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -207,7 +207,7 @@
   <xacro:macro name="insert_mesh_l_el_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/la3.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/la3.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -218,7 +218,7 @@
   <xacro:macro name="insert_mesh_head_pan_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/h1.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/h1.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
@@ -229,7 +229,7 @@
   <xacro:macro name="insert_mesh_head_tilt_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://robotis_op3_description/stl/h2.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/h2.stl"  scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
