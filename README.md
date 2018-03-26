@@ -8,8 +8,8 @@
 
 ## Wiki for robotis_op3_common Packages
 - http://wiki.ros.org/robotis_op3_common (metapackage)
-- http://wiki.ros.org/robotis_op3_description
-- http://wiki.ros.org/robotis_op3_gazebo
+- http://wiki.ros.org/op3_description
+- http://wiki.ros.org/op3_gazebo
 
 ## Open Source related to ROBOTIS OP3
 - [robotis_op3](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3)

@@ -15,7 +15,7 @@
   <url type="repository">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common</url>
   <url type="bugtracker">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/issues</url>
   <buildtool_depend>catkin</buildtool_depend>
-  <exec_depend>robotis_op3_description</exec_depend>
-  <exec_depend>robotis_op3_gazebo</exec_depend>
+  <exec_depend>op3_description</exec_depend>
+  <exec_depend>op3_gazebo</exec_depend>
   <export><metapackage/></export>
 </package>

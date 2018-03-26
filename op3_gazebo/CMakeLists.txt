@@ -2,7 +2,7 @@
 # Set minimum required version of cmake, project name and compile options
 ################################################################################
 cmake_minimum_required(VERSION 2.8.3)
-project(robotis_op3_description)
+project(op3_gazebo)
 
 ################################################################################
 # Find catkin packages and libraries for catkin and system dependencies
@@ -33,7 +33,7 @@ catkin_package()
 ################################################################################
 # Install
 ################################################################################
-install(DIRECTORY doc launch meshes rviz urdf
+install(DIRECTORY config launch worlds  
 	DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
