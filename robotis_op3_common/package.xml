@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>robotis_op3_common</name>
-  <version>0.2.0</version>
+  <version>0.1.0</version>
   <description>
-    ROS packages for the robotis_op3_common (meta package)
+    ROS packages for the ROBOTIS OP3 (meta package).
+    This meta package provides launch files and plug-in for Gazebo and RViz.
   </description>
   <license>Apache 2.0</license>
   <author email="kmjung@robotis.com">Kayman</author>

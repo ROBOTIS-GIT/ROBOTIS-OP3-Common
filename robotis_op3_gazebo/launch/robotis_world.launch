@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <launch>
-
   <arg name="position_controller" default="true"/>
 
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
@@ -25,12 +24,11 @@
    command="$(find xacro)/xacro.py '$(find robotis_op3_description)/urdf/robotis_op3.urdf.xacro'" />
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
-  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  <node pkg="gazebo_ros" type="spawn_model" name="urdf_spawner" respawn="false" output="screen"
   args="-urdf -model robotis_op3 -z 0.285 -param robot_description"/>
 
   <!-- ros_control robotis humanoid launch file -->
   <group if ="$(arg position_controller)">
     <include file="$(find robotis_op3_gazebo)/launch/position_controller.launch" />
   </group>
-
 </launch>
