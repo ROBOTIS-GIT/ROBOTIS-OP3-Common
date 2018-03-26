@@ -1,11 +1,10 @@
 <?xml version="1.0" ?>
 <launch>
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find robotis_op3_description)/urdf/robotis_op3.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find robotis_op3_description)/urdf/robotis_op3.urdf.xacro'"/>
 
   <!-- send joint values -->
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
     <param name="use_gui" value="TRUE"/>
-    <!--<rosparam param="source_list">["robotis/real_joint_states"]</rosparam>-->
   </node>
 
   <!-- Combine joint values -->
