@@ -7,6 +7,7 @@
     This meta package provides launch files and plug-in for Gazebo and RViz.
   </description>
   <license>Apache 2.0</license>
+  <author email="sch@robotis.com">SCH</author>
   <author email="kmjung@robotis.com">Kayman</author>
   <maintainer email="pyo@robotis.com">Pyo</maintainer>
   <url type="website">http://wiki.ros.org/robotis_op3_common</url>
