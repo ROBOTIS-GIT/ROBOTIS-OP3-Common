@@ -1,20 +1,20 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="robotis_op3">
 
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.visuals.xacro" />
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.inertia.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.visuals.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.inertia.xacro" />
 
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.structure.rleg.xacro" />
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.structure.lleg.xacro" />
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.structure.rarm.xacro" />
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.structure.larm.xacro" />
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.structure.head.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.rleg.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.lleg.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.rarm.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.larm.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.head.xacro" />
 
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.gazebo.xacro" />
-  <xacro:include filename="$(find robotis_op3_description)/urdf/robotis_op3.transmissions.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.gazebo.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.transmissions.xacro" />
 
   <!--
-  <xacro:include filename="$(find robotis_op3_description)/urdf/gazebo_harness.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/gazebo_harness.xacro" />
   -->
 
   <!-- harness link -->
