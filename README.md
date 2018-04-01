@@ -1,3 +1,6 @@
+# ROBOTIS OP3
+<img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/op3/default_op3.jpg" width="40%" />  
+
 ## ROS Packages for ROBOTIS OP3 Common
 |Version|Kinetic + Ubuntu Xenial|Melodic + Ubuntu Bionic|
 |:---:|:---:|:---:|
