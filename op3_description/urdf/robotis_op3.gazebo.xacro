@@ -293,7 +293,7 @@
         <cameraName>robotis_op3/camera</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-        <frameName>camera_link</frameName>
+        <frameName>cam_link</frameName>
         <hackBaseline>0.07</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
@@ -315,12 +315,12 @@
       <topic>__default_topic__</topic>
       <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
         <topicName>robotis_op3/imu</topicName>
-        <bodyName>imu_link</bodyName>
+        <bodyName>body_link</bodyName>
         <updateRateHZ>10.0</updateRateHZ>
         <gaussianNoise>0.0</gaussianNoise>
         <xyzOffset>0 0 0</xyzOffset>
         <rpyOffset>0 0 0</rpyOffset>
-        <frameName>imu_link</frameName>
+        <frameName>body_link</frameName>
       </plugin>
       <pose>0 0 0 0 0 0</pose>
     </sensor>
