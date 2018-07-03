@@ -77,7 +77,7 @@
   <link name="cam_gazebo_link">
   </link>
 
-  <xacro:include filename="$(find realsense2_camera)/urdf/_r430.urdf.xacro"/>
+  <xacro:include filename="$(find realsense2_camera)/urdf/_d430.urdf.xacro"/>
   <sensor_r430 parent="cam_link">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </sensor_r430>
