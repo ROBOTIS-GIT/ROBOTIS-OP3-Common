@@ -32,7 +32,7 @@
     </inertial>
   </link>
 
-  <!-- head pitch joint -->
+  <!-- head tilt joint -->
   <joint name="head_tilt" type="revolute">
     <parent link="head_pan_link"/>
     <child link="head_tilt_link"/>
@@ -43,11 +43,11 @@
   </joint>
   <xacro:insert_transmission name="head_tilt" />
 
-  <!-- head yaw link -->
+  <!-- head tilk link -->
   <link name="head_tilt_link">
-    <!-- <visual> -->
-    <!--   <xacro:insert_mesh_head_tilt_link /> -->
-    <!-- </visual> -->
+    <visual>
+      <xacro:insert_mesh_head_tilt_link />
+    </visual>
     <collision>
       <xacro:insert_mesh_head_tilt_link />
     </collision>
@@ -56,30 +56,21 @@
     </inertial>
   </link>
 
-  <!-- camera joint -->
-  <joint name="cam" type="fixed">
-    <origin xyz="0.01425 -0.019 0.04975" rpy="${-pi*0.5} 0 ${-pi*0.5}"/>
-    <parent link="head_tilt_link"/>
-    <child link="cam_link"/>
-  </joint>
-
+  <!-- camera gazebo joint -->
   <joint name="cam_gazebo" type="fixed">
     <origin xyz="0.01425 -0.019 0.04975" rpy="0 0 0"/>
     <parent link="head_tilt_link"/>
     <child link="cam_gazebo_link"/>
   </joint>
 
-  <!-- camera link -->
-  <link name="cam_link">
-  </link>
-
-  <!-- camera link -->
+  <!-- camera gazebo link -->
   <link name="cam_gazebo_link">
   </link>
 
   <xacro:include filename="$(find realsense2_camera)/urdf/_d435.urdf.xacro"/>
-  <sensor_d435 parent="cam_link">
-    <origin xyz="0 0 0" rpy="${pi*0.5} ${-pi*0.5} 0"/>
+  <sensor_d435 parent="head_tilt_link">
+    <!-- <origin xyz="0.018 0 0.05275" rpy="${pi*0.5} ${-pi*0.5} 0"/> -->
+    <origin xyz="-0.0041 -0.019 0.04025" rpy="0 0 0"/>
   </sensor_d435>
 
   </xacro:macro>

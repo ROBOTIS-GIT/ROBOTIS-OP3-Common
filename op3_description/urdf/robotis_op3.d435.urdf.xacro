@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="robotis_op3">
 
-  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.visuals.xacro" />
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.d435.visuals.xacro" />
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.inertia.xacro" />
 
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.rleg.xacro" />
