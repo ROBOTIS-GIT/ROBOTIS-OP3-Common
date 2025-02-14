@@ -12,7 +12,7 @@
 
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.head.xacro" />
 
-  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.ros2.gazebo.xacro" />
+  <!-- <xacro:include filename="$(find op3_description)/urdf/robotis_op3.ros2.gazebo.xacro" /> -->
   
   <link name="base"/>
 
@@ -52,6 +52,6 @@
   <!-- head links -->
   <xacro:robotis_op3_head parent="body_link" />  
 
-  <xacro:robotis_op3_gazebo/>
+  <!-- <xacro:robotis_op3_gazebo/> -->
 
 </robot>
