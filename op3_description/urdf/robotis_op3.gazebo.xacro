@@ -183,10 +183,7 @@
         <plugin>gz_ros2_control/GazeboSimSystem</plugin>
       </hardware>
       <joint name="r_sho_pitch">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -195,10 +192,7 @@
       </joint>
       
       <joint name="l_sho_pitch">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -207,10 +201,7 @@
       </joint>
 
       <joint name="r_sho_roll">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -219,10 +210,7 @@
       </joint>
 
       <joint name="l_sho_roll">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -231,10 +219,7 @@
       </joint>
 
       <joint name="r_el">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -243,10 +228,7 @@
       </joint>
 
       <joint name="l_el">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -255,10 +237,7 @@
       </joint>
 
       <joint name="r_hip_yaw">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -267,10 +246,7 @@
       </joint>
 
       <joint name="l_hip_yaw">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -279,10 +255,7 @@
       </joint>
 
       <joint name="r_hip_roll">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -291,10 +264,7 @@
       </joint>
 
       <joint name="l_hip_roll">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -303,10 +273,7 @@
       </joint>
 
       <joint name="r_hip_pitch">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -315,10 +282,7 @@
       </joint>
 
       <joint name="l_hip_pitch">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -327,10 +291,7 @@
       </joint>
 
       <joint name="r_knee">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -339,10 +300,7 @@
       </joint>
 
       <joint name="l_knee">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -351,10 +309,7 @@
       </joint>
 
       <joint name="r_ank_pitch">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -363,10 +318,7 @@
       </joint>
 
       <joint name="l_ank_pitch">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -375,10 +327,7 @@
       </joint>
 
       <joint name="r_ank_roll">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -387,10 +336,7 @@
       </joint>
 
       <joint name="l_ank_roll">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -399,10 +345,7 @@
       </joint>
 
       <joint name="head_pan">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
@@ -411,10 +354,7 @@
       </joint>
 
       <joint name="head_tilt">
-        <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
-        </command_interface>
+        <command_interface name="position"/>
         <state_interface name="position">
           <param name="initial_value">0.0</param>
         </state_interface>
