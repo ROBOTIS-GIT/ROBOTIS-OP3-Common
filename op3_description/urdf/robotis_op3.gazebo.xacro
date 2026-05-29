@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:macro name="robotis_op3_gazebo">
+  <xacro:macro name="robotis_op3_gazebo" params="gazebo_controllers_param_file">
 
     <gazebo reference="body_link">
       <mu1>0.2</mu1>
@@ -169,7 +169,7 @@
     <!-- For Gazebo Control and Sensors -->
     <gazebo>
       <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-        <parameters>$(find op3_gazebo_ros2)/config/robotis_op3_gazebo_config.yaml</parameters>
+        <parameters>${gazebo_controllers_param_file}</parameters>
       </plugin>
       <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
         <render_engine>ogre2</render_engine>
