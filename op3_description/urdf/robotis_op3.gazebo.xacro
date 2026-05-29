@@ -6,7 +6,6 @@
     <gazebo reference="body_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
@@ -14,35 +13,30 @@
     <gazebo reference="l_hip_yaw_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_hip_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_hip_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_knee_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_ank_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
@@ -54,42 +48,36 @@
       <fdir1>1 0 0</fdir1>
       <maxVel>1.0</maxVel>
       <minDepth>0.001</minDepth>
-      <material>Gazebo/White</material>
     </gazebo>
 
     <!-- right leg links -->
     <gazebo reference="r_hip_yaw_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_hip_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_hip_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_knee_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_ank_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
@@ -102,62 +90,53 @@
       <fdir1>1 0 0</fdir1>
       <maxVel>1.0</maxVel>
       <minDepth>0.001</minDepth>
-      <material>Gazebo/White</material>
     </gazebo>
 
     <gazebo reference="r_sho_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_sho_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_el_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_sho_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_sho_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_el_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="head_pan_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="head_tilt_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo> 
 
