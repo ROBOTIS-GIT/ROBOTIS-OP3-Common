@@ -1,6 +1,9 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="robotis_op3">
 
+  <xacro:arg name="use_sim" default="false"/>
+  <xacro:arg name="gazebo_controllers_param_file" default="$(find op3_gazebo_ros2)/config/robotis_op3_gazebo_config.yaml"/>
+
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.visuals.xacro" />
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.inertia.xacro" />
 
@@ -12,7 +15,7 @@
 
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.head.xacro" />
 
-  <!-- <xacro:include filename="$(find op3_description)/urdf/robotis_op3.ros2.gazebo.xacro" /> -->
+  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.gazebo.xacro" />
   
   <link name="base"/>
 
@@ -52,6 +55,9 @@
   <!-- head links -->
   <xacro:robotis_op3_head parent="body_link" />  
 
-  <!-- <xacro:robotis_op3_gazebo/> -->
+  <!-- gazebo / ros2_control -->
+  <xacro:if value="$(arg use_sim)">
+    <xacro:robotis_op3_gazebo gazebo_controllers_param_file="$(arg gazebo_controllers_param_file)"/>
+  </xacro:if>
 
 </robot>

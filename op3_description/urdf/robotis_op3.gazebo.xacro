@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:macro name="robotis_op3_gazebo">
+  <xacro:macro name="robotis_op3_gazebo" params="gazebo_controllers_param_file">
 
     <gazebo reference="body_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
@@ -14,35 +13,30 @@
     <gazebo reference="l_hip_yaw_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_hip_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_hip_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_knee_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_ank_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
@@ -54,42 +48,36 @@
       <fdir1>1 0 0</fdir1>
       <maxVel>1.0</maxVel>
       <minDepth>0.001</minDepth>
-      <material>Gazebo/White</material>
     </gazebo>
 
     <!-- right leg links -->
     <gazebo reference="r_hip_yaw_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_hip_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_hip_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_knee_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_ank_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
@@ -102,62 +90,53 @@
       <fdir1>1 0 0</fdir1>
       <maxVel>1.0</maxVel>
       <minDepth>0.001</minDepth>
-      <material>Gazebo/White</material>
     </gazebo>
 
     <gazebo reference="r_sho_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_sho_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="r_el_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_sho_pitch_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_sho_roll_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="l_el_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="head_pan_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo>
 
     <gazebo reference="head_tilt_link">
       <mu1>0.2</mu1>
       <mu2>0.2</mu2>
-      <material>Gazebo/White</material>
       <selfCollide>false</selfCollide>
     </gazebo> 
 
@@ -186,6 +165,203 @@
         <joint_name>head_tilt</joint_name>
       </plugin>
     </gazebo>
+
+    <!-- For Gazebo Control and Sensors -->
+    <gazebo>
+      <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>${gazebo_controllers_param_file}</parameters>
+      </plugin>
+      <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+        <render_engine>ogre2</render_engine>
+      </plugin>
+      <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+    </gazebo>
+
+    <!-- For Ros2 Control -->
+    <ros2_control name="GazeboSimSystem" type="system">
+      <hardware>
+        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+      </hardware>
+      <joint name="r_sho_pitch">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      
+      <joint name="l_sho_pitch">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_sho_roll">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_sho_roll">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_el">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_el">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_hip_yaw">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_hip_yaw">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_hip_roll">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_hip_roll">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_hip_pitch">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_hip_pitch">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_knee">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_knee">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_ank_pitch">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_ank_pitch">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="r_ank_roll">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="l_ank_roll">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="head_pan">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+
+      <joint name="head_tilt">
+        <command_interface name="position"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+    </ros2_control>
 
     <gazebo reference="cam_gazebo_link">
       <sensor name='camera' type='camera'>
